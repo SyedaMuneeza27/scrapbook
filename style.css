@@ -1,0 +1,102 @@
+body {
+  font-family: Georgia, serif;
+	background-image:url("./front.jpg");
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-30%, -20%);
+  transform: translate(-30%, -20%);
+}
+a{
+  text-decoration: none;
+}
+
+.button{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a{
+  position: relative;
+  padding:15px 25px;
+  font-size: 20px;
+  color:#742a8b;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition:.3s;
+}
+
+.button a span{
+  position: absolute;
+  display: block;
+}
+
+.button a span:nth-child(1){
+  width: 70%;
+  height: 2px;
+  background:linear-gradient(90deg, transparent, #f8a6bc);
+  top: 0%;
+  left:-70%;
+  position: absolute;
+}
+
+.button a:hover span:nth-child(1){
+  left:50%;
+  transition:.6s;
+}
+
+.button a span:nth-child(3){
+  width: 70%;
+  height: 2px;
+  background:linear-gradient(280deg, transparent, #f8a6bc);
+  bottom:0%;
+  right:-70%;
+  position: absolute;
+}
+
+.button a:hover span:nth-child(3){
+  right:70%;
+  transition: .5s;
+  transition-delay:.5s;
+}
+
+.button a span:nth-child(2){
+  width:2px;
+  height:70%;
+  background:linear-gradient(280deg, transparent, #f8a6bc);
+  bottom:-70%;
+  left:0%;
+  position: absolute;
+}
+
+.button a:hover span:nth-child(2){
+  bottom:70%;
+  transition: .5s;
+  transition-delay:.75s;
+}
+
+.button a span:nth-child(4){
+  width:2px;
+  height:70%;
+  background:linear-gradient(180deg, transparent, #f8a6bc);
+  top:-70%;
+  right:0%;
+  position: absolute;
+}
+
+.button a:hover span:nth-child(4){
+  top:70%;
+  transition: .5s;
+  transition-delay:.25s;
+  
+}
+
+.button a:hover{
+  background-color:#f8a6bc;
+  box-shadow: 0 0 10px #f8a6bc, 0 0 40px #f8a6bc, 0 0 80px #f8a6bc;
+  transition-delay: 1s;
+}
